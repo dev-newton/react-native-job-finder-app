@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://opensource.indeedeng.io/api-documentation/docs/job-search/#json-example -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="http://opensource.indeedeng.io/api-documentation/images/favicon.ico">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Job Search API</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="./Job Search API_files/bootstrap.min.css">
+        <link rel="stylesheet" href="./Job Search API_files/bootstrap-toc.min.css">
+        <script type="text/javascript" src="./Job Search API_files/jquery-1.11.1.min.js.download"></script>
+        <script type="text/javascript" src="./Job Search API_files/bootstrap.min.js.download"></script>
+        <script src="./Job Search API_files/bootstrap-toc.min.js.download"></script>
+        <link rel="stylesheet" href="./Job Search API_files/normalize.css">
+        <link rel="stylesheet" href="./Job Search API_files/gridism.css">
+        <link rel="stylesheet" href="./Job Search API_files/syntax.css">
+        <link rel="stylesheet" href="./Job Search API_files/styles.css">
+        <link rel="stylesheet" href="./Job Search API_files/indeed-styles.css">
+        <link rel="stylesheet" href="./Job Search API_files/styles-minimalist.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body data-spy="scroll" data-target="#toc">
+        <div id="blogHeader" class="full-width-wrapper">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerNavLinks">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="https://engineering.indeedblog.com/" class="navbar-brand">
+                                <img src="./Job Search API_files/ind-eng-logo.png" alt="Indeed Engineering" width="300" scale="0">     
+                            </a>             
+                        </div>
+                        <div id="headerNavLinks" class="collapse navbar-collapse">
+                            <ul class="">
+                                <li id="menu-item-1211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1211">
+                                    <a href="http://engineering.indeedblog.com/blog">Engineering Blog</a>
+                                </li>
+                                <li id="menu-item-1212" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1212">
+                                    <a href="http://engineering.indeedblog.com/talks">Tech Talks</a>
+                                </li>
+			                    <li id="menu-item-1214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1214">
+			                        <a href="http://opensource.indeedeng.io/">Open Source</a>
+			                    </li>
+      		                    <li id="menu-item-1213" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1213">
+      		                        <a href="http://indeed.jobs/">Work at Indeed</a>
+      		                    </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <section>
+                <div class="grid">
+                    <div class="unit one-fifth" id="leftnav">
+                        <div id="stickyNav" data-spy="affix" data-offset-bottom="50" data-offset-top="106" style="width:218px;" class="affix">
+                            <nav>
+<p><button data-toggle="collapse" data-target="#global_nav" id="navbutton">Indeed APIs</button></p>
+
+<div id="global_nav" class="collapse">
+    
+    <div style="width: 100%">
+
+ <h3 data-toc-skip="">Indeed APIs</h3>
+  <a href="http://opensource.indeedeng.io/api-documentation/">Overview</a>
+ <h3 data-toc-skip="">Job Search</h3>
+  
+
+<ul style="list-style-type: none; padding: 0; margin-left: 0">
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class="current"><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/">Job Search API</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+  
+  
+    
+      <li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/get-job/">Get Job API</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/supported-countries/">Supported Countries</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+ <h3 data-toc-skip="">Indeed Apply</h3>
+  
+
+<ul style="list-style-type: none; padding: 0; margin-left: 0">
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/xml-feed-ia/">XML feed and Indeed Apply</a></li>
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/sponsored-jobs/">Sponsored Jobs ATS Integration</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+  <h3 data-toc-skip="">Resume</h3>
+  
+
+<ul style="list-style-type: none; padding: 0; margin-left: 0">
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/resume/">Resume API</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/oauth/">OAuth 2</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+ <br style="clear: left;">
+</div>
+
+</div>
+</nav>
+
+<hr>
+                            <nav id="toc" data-toggle="toc"><ul class="nav"><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#prerequisite">Prerequisite</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#search-request-example">Search request example</a></li><li class="active"><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#search_response">Search response examples</a><ul class="nav"><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#xml-example">XML example</a></li><li class="active"><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#json-example">JSON example</a></li></ul></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#request_params">Request parameters</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#requirements">Requirements</a><ul class="nav"><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#display_results">Display meaningful results</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#click_tracking">Enable click tracking</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#attribution">Include attribution to Indeed</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#nofollow">Include nofollow tag</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#rt_requests">Make job requests in real time</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#multiple_sites">Apply API to multiple websites</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#pagination">Paginate results on multiple pages</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#usertip_useragent">Specify userip and useragent</a></li><li class=""><a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#onmousedown">Include onmousedown attribute</a></li></ul></li></ul></nav>
+                             <!--custom script to hide/show the floating page TOC-->
+                            <script>
+                                function hideObject( element ) {
+                                    $( element ).toggle();
+                                }
+                                $( "#navbutton" ).click(function() {
+                                    hideObject( "#toc");
+                                });
+                                $( "#stickyNav" ).attr( "data-offset-top", $( "#blogHeader" ).height()+10 );
+                                $( "#stickyNav" ).attr( "style", "width:" + $( "#leftnav" ).width() + "px;" );
+                                $( window ).resize(function() {
+                                    $( "#stickyNav" ).attr( "style", "width:" + $( "#leftnav" ).width() + "px;" );
+                                    $('#stickyNav').data('bs.affix').options.offset = $('#stickyNav').offset().top;
+                            });
+                            </script>
+                            <!---->
+                        </div>
+                    </div>
+                <div class="unit four-fifths" style="min-height:775px;">
+                    <article>
+                        <h1>Job Search API</h1> 
+                        <p>Use the Job Search API to submit job searches and return results from your website.</p>
+
+<h2 id="prerequisite">Prerequisite</h2>
+
+<p><a href="http://www.indeed.com/publisher" target="_blank">Create a free Publisher account</a> to receive a Publisher ID and access to job data. Once you create this account, Indeed provides reports and earnings for your traffic.</p>
+
+<h2 id="search-request-example"><a name="search_request"></a>Search request example</h2>
+
+<p>The following example shows a search request for Java developers (<a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#request_params"><code>q</code></a>) in Austin, TX (<a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#request_params"><code class="highlighter-rouge">l</code></a>):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://api.indeed.com/ads/apisearch?publisher=123412341234123&amp;q=java+developer&amp;l=austin%2C+tx&amp;sort=&amp;radius=&amp;st=&amp;jt=&amp;start=&amp;limit=&amp;fromage=&amp;filter=&amp;latlong=1&amp;co=us&amp;chnl=&amp;userip=1.2.3.4&amp;useragent=Mozilla/%2F4.0%28Firefox%29&amp;v=2
+</code></pre></div></div>
+<p>You must specify the following parameters in your search request:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">publisher</code></td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td><strong>Yes</strong></td>
+      <td>Publisher ID. Indeed assigns the Publisher ID after you <a href="http://www.indeed.com/publisher" target="_blank">create a Publisher account</a>. Locate this ID on the XML Feed tab of your Publisher account.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">v</code></td>
+      <td><code class="highlighter-rouge">int</code></td>
+      <td><strong>Yes</strong></td>
+      <td>Version of the API. You must set this value to <code class="highlighter-rouge">2</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">userip</code></td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td><strong>Yes</strong></td>
+      <td>The IP address of the end user who will view job results from your website.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">useragent</code></td>
+      <td><code class="highlighter-rouge">string</code></td>
+      <td><strong>Yes</strong></td>
+      <td>The browser of the end user who will view job results from your website. You can obtain this parameter using the <code class="highlighter-rouge">User-Agent</code> HTTP request header from the end user.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Refer to the <a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#request_params">complete list of parameters</a> for more details on effectively customizing your search.</p>
+
+<h2 id="search_response">Search response examples</h2>
+
+<p><b>Note</b>: If you don’t specify a response format, the API returns XML by default.</p>
+
+<h3 id="xml-example">XML example</h3>
+
+<p><button data-toggle="collapse" data-target="#xml_response1">Click to expand example</button></p>
+
+<div id="xml_response1" class="collapse">
+
+  <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;response</span> <span class="na">version=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;query&gt;</span>java<span class="nt">&lt;/query&gt;</span> 
+    <span class="nt">&lt;location&gt;</span>austin, tx<span class="nt">&lt;/location&gt;</span>
+    <span class="nt">&lt;dupefilter&gt;</span>true<span class="nt">&lt;/dupefilter&gt;</span> 
+    <span class="nt">&lt;highlight&gt;</span>false<span class="nt">&lt;/highlight&gt;</span> 
+    <span class="nt">&lt;totalresults&gt;</span>547<span class="nt">&lt;/totalresults&gt;</span> 
+    <span class="nt">&lt;start&gt;</span>1<span class="nt">&lt;/start&gt;</span>
+    <span class="nt">&lt;end&gt;</span>10<span class="nt">&lt;/end&gt;</span> 
+    <span class="nt">&lt;radius&gt;</span>25<span class="nt">&lt;/radius&gt;</span> 
+    <span class="nt">&lt;pageNumber&gt;</span>0<span class="nt">&lt;/pageNumber&gt;</span> 
+    <span class="nt">&lt;results&gt;</span>
+        <span class="nt">&lt;result&gt;</span>
+            <span class="nt">&lt;jobtitle&gt;</span>Java Developer<span class="nt">&lt;/jobtitle&gt;</span>
+            <span class="nt">&lt;company&gt;</span>XYZ Corp.<span class="nt">&lt;/company&gt;</span>
+            <span class="nt">&lt;city&gt;</span>Austin<span class="nt">&lt;/city&gt;</span>
+            <span class="nt">&lt;state&gt;</span>TX<span class="nt">&lt;/state&gt;</span>
+            <span class="nt">&lt;country&gt;</span>US<span class="nt">&lt;/country&gt;</span>
+            <span class="nt">&lt;formattedLocation&gt;</span>Austin, TX<span class="nt">&lt;/formattedLocation&gt;</span>
+            <span class="nt">&lt;source&gt;</span>Dice<span class="nt">&lt;/source&gt;</span>
+            <span class="nt">&lt;date&gt;</span>Mon, 02 Aug 2017 16:21:00 GMT<span class="nt">&lt;/date&gt;</span>
+            <span class="nt">&lt;snippet&gt;</span>looking for an object-oriented Java Developer... 
+               Java Servlets, HTML, JavaScript, AJAX, Struts, Struts2, 
+               JSF) desirable. Familiarity with Tomcat and the Java...<span class="nt">&lt;/snippet&gt;</span> 
+            <span class="nt">&lt;url&gt;</span>http://www.indeed.com/viewjob?jk=12345<span class="err">&amp;</span>indpubnum=8343699265155203<span class="nt">&lt;/url&gt;</span> 
+            <span class="nt">&lt;onmousedown&gt;</span>indeed_clk(this,'0000');<span class="nt">&lt;/onmousedown&gt;</span>
+            <span class="nt">&lt;latitude&gt;</span>30.27127<span class="nt">&lt;/latitude&gt;</span>
+            <span class="nt">&lt;longitude&gt;</span>-97.74103<span class="nt">&lt;/longitude&gt;</span>
+            <span class="nt">&lt;jobkey&gt;</span>12345<span class="nt">&lt;/jobkey&gt;</span>
+            <span class="nt">&lt;sponsored&gt;</span>false<span class="nt">&lt;/sponsored&gt;</span>
+            <span class="nt">&lt;expired&gt;</span>false<span class="nt">&lt;/expired&gt;</span>
+            <span class="nt">&lt;formattedLocationFull&gt;</span>Austin, TX<span class="nt">&lt;/formattedLocationFull&gt;</span>
+            <span class="nt">&lt;formattedRelativeTime&gt;</span>11 hours ago<span class="nt">&lt;/formattedRelativeTime&gt;</span>
+        <span class="nt">&lt;/result&gt;</span>
+    <span class="nt">&lt;/results&gt;</span>
+<span class="nt">&lt;/response&gt;</span>
+</code></pre></div>  </div>
+</div>
+
+<h3 id="json-example">JSON example</h3>
+
+<p><button data-toggle="collapse" data-target="#json_response1" class="" aria-expanded="true">Click to expand example</button></p>
+
+<div id="json_response1" class="collapse in" aria-expanded="true" style="">
+
+  <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">  
+    </span><span class="s2">"version"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"query"</span><span class="p">:</span><span class="s2">"java"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"location"</span><span class="p">:</span><span class="s2">"austin, tx"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"dupefilter"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"highlight"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"radius"</span><span class="p">:</span><span class="mi">25</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"start"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"end"</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"totalResults"</span><span class="p">:</span><span class="mi">547</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pageNumber"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"results"</span><span class="p">:[</span><span class="w">  
+        </span><span class="p">{</span><span class="w">  
+            </span><span class="s2">"jobtitle"</span><span class="p">:</span><span class="s2">"Java Developer"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"company"</span><span class="p">:</span><span class="s2">"XYZ Corp.,"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="s2">"Austin"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="s2">"TX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"country"</span><span class="p">:</span><span class="s2">"US"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"formattedLocation"</span><span class="p">:</span><span class="s2">"Austin, TX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"source"</span><span class="p">:</span><span class="s2">"Dice"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"date"</span><span class="p">:</span><span class="s2">"Mon, 02 Aug 2017 16:21:00 GMT"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"snippet"</span><span class="p">:</span><span class="s2">"looking for an object-oriented Java Developer... Java Servlets,
+              HTML, JavaScript, AJAX, Struts, Struts2, JSF) desirable. Familiarity with
+              Tomcat and the Java..."</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"url"</span><span class="p">:</span><span class="s2">"http://www.indeed.com/viewjob?jk=12345&amp;indpubnum=8343699265155203"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"onmousedown"</span><span class="p">:</span><span class="s2">"indeed_clk(this, '0000');"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"latitude"</span><span class="p">:</span><span class="mf">30.27127</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"longitude"</span><span class="p">:</span><span class="mf">-97.74103</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"jobkey"</span><span class="p">:</span><span class="s2">"12345"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"sponsored"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"expired"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"indeedApply"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"formattedLocationFull"</span><span class="p">:</span><span class="s2">"Austin, TX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"formattedRelativeTime"</span><span class="p">:</span><span class="s2">"11 hours ago"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>  </div>
+</div>
+
+<h2 id="request_params">Request parameters</h2>
+
+<table>
+    <tbody><tr>
+        <th>Parameter</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th>Default</th>
+     </tr>
+<tr>
+<td><code>publisher</code></td><td><code>string</code></td><td><b>Yes</b></td><td>Publisher ID. Indeed assigns the Publisher ID after you <a href="http://www.indeed.com/publisher" target="_blank">create a Publisher account</a>. Locate this ID on the XML Feed tab of your Publisher account.</td><td>-----</td>
+</tr>
+<tr>
+<td><code>v</code></td><td><code>int</code></td><td><b>Yes</b></td><td>Version of the API. You must set this value to <code>2</code>.</td><td>-----</td>
+</tr>
+<tr>
+<td><code>userip</code></td><td><code>string</code></td><td><b>Yes</b></td><td>The IP address of the end user who will view job results from your website.</td><td>-----</td>
+</tr>
+<tr>
+<td><code>useragent</code></td><td><code>string</code></td><td><b>Yes</b></td><td>The browser of the end user who will view job results from your website. You can obtain this parameter using the <code>User-Agent</code> HTTP request header from the end user.</td><td>-----</td>
+</tr>
+<tr>
+<td><code>format</code></td><td><code>string</code></td><td><b>No</b></td><td>Output format of the API. You can specify <code>xml</code> or <code>json</code>.</td><td><code>xml</code></td>
+</tr>
+<tr>
+<td><code>callback</code></td><td><code>string</code></td><td><b>No</b></td><td>Callback. The name of JavaScript callback function for passing search results. This parameter applies only when <code>format</code> is <code>json</code>. <br><br><b>Note</b>: For security reasons, you must restrict the callback name to letters, numbers, and the underscore character. </td><td>Empty</td>
+</tr>
+<tr>
+<td><code>q</code></td><td><code>string</code></td><td><b>No</b></td><td>Query. By default, terms are ANDed. <br><br><b>Tip</b>: To format the search words for <code>q</code>, perform your search from the <a href="http://www.indeed.com/" target="_blank">Job Search</a> page. The URL displays the expected formatting for this parameter. For example, <code>q=developer</code> or <code>q=java+developer</code>. </td><td>Empty. Searches all jobs.</td>
+</tr>
+<tr>
+<td><code>l</code></td><td><code>string</code></td><td><b>No</b></td><td>Location. Use a postal code or a "city, state/province/region" combination. For example, <code>l=Austin%2C+TX</code>.  <br><br><b>Tip</b>: Use the <a href="http://www.indeed.com/" target="_blank">Job Search</a> or <a href="http://www.indeed.com/advanced_search" target="_blank">Advanced Job Search</a> page and inspect the URL to see how to encode your parameter values.</td><td>Empty. Searches all locations.</td>
+</tr>
+<tr>
+<td><code>sort</code></td><td><code>string</code></td><td><b>No</b></td><td>Sort by <code>relevance</code> or <code>date</code>.</td><td><code>relevance</code></td>
+</tr>
+<tr>
+<td><code>radius</code></td><td><code>int</code></td><td><b>No</b></td><td>Distance from the search location (point-to-point aerial transit path, or "as the bird flies"). <br><br><b>Note</b>: The unit for this parameter is local to the country. For example, the default is 25 miles in the United States and 25 kilometers in the Netherlands.</td><td><code>25</code></td>
+</tr>
+<tr>
+<td><code>st</code></td><td><code>string</code></td><td><b>No</b></td><td> Site type. To show only jobs from job boards, use <code>jobsite</code>. For jobs from direct employer websites, use <code>employer</code>.</td><td>Empty. Searches all websites.</td></tr>
+<tr><td><code>jt</code></td><td><code>string</code></td><td><b>No</b></td><td> Job type. You can specify <code>fulltime</code>, <code>parttime</code>, <code>contract</code>, <code>internship</code>, or <code>temporary</code>. </td><td>Empty. Searches all job types.</td>
+</tr>
+<tr>
+<td><code>start</code></td><td><code>int</code></td><td><b>No</b></td><td>Start returning jobs at this result number, beginning at 0.<br><br><b>Note</b>: You can use the <code>start</code> and <code>limit</code> parameters for <a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#pagination">pagination</a>.</td><td><code>0</code></td>
+</tr>
+<tr>
+<td><code>limit</code></td><td><code>int</code></td><td><b>No</b></td><td>Maximum number of results to return per query. The maximum value is <code>25</code>.<br><br><b>Note</b>: You can use the <code>start</code> and <code>limit</code> parameters for <a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#pagination">pagination</a>.</td><td><code>10</code></td>
+</tr>
+<tr>
+<td><code>fromage</code></td><td><code>int</code></td><td><b>No</b></td><td>Number of days since a job was published. If you specify <code>15</code>, for example, the API searches jobs published only within the last 15 days. </td><td>Empty. Searches jobs posted anytime.</td>
+</tr>
+<tr>
+<td><code>highlight</code></td><td><code>int</code></td><td><b>No</b></td><td>Highlight query terms. If you specify <code>1</code>, this parameter applies <b>boldface</b> to the terms present in <code>q</code>.</td><td><code>0</code></td>
+</tr>
+<tr>
+<td><code>filter</code></td><td><code>int</code></td><td><b>No</b></td><td>Filter out duplicate jobs. To turn this off, specify <code>0</code>. </td><td><code>1</code></td>
+</tr>
+<tr>
+<td><code>latlong</code></td><td><code>int</code></td><td><b>No</b></td><td>Latitude and longitude information. To return this information for each job result, set to <code>1</code>.</td><td><code>0</code></td>
+</tr>
+<tr>
+<td><code>co</code></td><td><code>string</code></td><td><b>No</b></td><td>Country to search. See <a href="http://opensource.indeedeng.io/api-documentation/docs/supported-countries/" target="_blank">Supported Countries</a> for the complete list.</td><td><code>us</code></td>
+</tr>
+<tr>
+<td><code>chnl</code></td><td><code>string</code></td><td><b>No</b></td><td>Channel name for grouping API requests. If you want to <a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#multiple_sites">use this API for multiple websites</a>, include a channel name here.</td><td>Empty</td>
+</tr>
+
+</tbody></table>
+
+<h2 id="requirements">Requirements</h2>
+
+<p>To use the Job Search API, implement the following requirements.</p>
+
+<h3 id="display_results">Display meaningful results</h3>
+
+<p>Include the following response data on your website to ensure relevant results:</p>
+
+<ul>
+  <li>
+    <p>Title</p>
+  </li>
+  <li>
+    <p>Location</p>
+  </li>
+  <li>
+    <p>Job description snippet</p>
+  </li>
+  <li>
+    <p>Company name</p>
+  </li>
+</ul>
+
+<h3 id="click_tracking">Enable click tracking</h3>
+
+<p>Your HTML markup must reference a JavaScript file for click tracking support.</p>
+
+<p>Copy the following code and paste it into the <code class="highlighter-rouge">&lt;head&gt;</code> section of your web page:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"//gdc.indeed.com/ads/apiresults.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h3 id="attribution">Include attribution to Indeed</h3>
+
+<p>You must use the following attribution when displaying Indeed’s job search results.</p>
+
+<p>Copy and paste the following code near the search results on your web page:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"indeed_at"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://www.indeed.com/"</span> <span class="na">rell=</span><span class="s">"nofollow"</span> <span class="nt">&gt;</span>jobs<span class="nt">&lt;/a&gt;</span> by <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.indeed.com/"</span> <span class="na">rell=</span><span class="s">"nofollow"</span> <span class="na">title=</span><span class="s">"Job Search"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"http://www.indeed.com/p/jobsearch.gif"</span> <span class="na">style=</span><span class="s">"border: 0; vertical-align: middle;"</span> <span class="na">alt=</span><span class="s">"Indeed job search"</span><span class="nt">&gt;&lt;/a&gt;&lt;/span&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Note</strong>: You can customize the Indeed website URL in the previous code to point to any <a href="http://opensource.indeedeng.io/api-documentation/docs/supported-countries/">supported country</a> site.</p>
+
+<h3 id="nofollow">Include nofollow tag</h3>
+
+<p>Every Indeed job URL on your website should include a <code>nofollow</code> tag.</p>
+
+<p>Example—shows the <code>rel</code> attribute for job result link on your site set to <code>nofollow</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"www.example.com/joburl"</span> <span class="na">rel=</span><span class="s">"nofollow"</span><span class="nt">&gt;</span>job title<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h3 id="rt_requests">Make job requests in real time</h3>
+
+<p>Do not cache search results. Always make requests in real time when a job seeker completes a job search.</p>
+
+<p>Do not cache the IP address for <code class="highlighter-rouge">api.indeed.com</code> and regularly resolve DNS.</p>
+
+<h3 id="multiple_sites">Apply API to multiple websites</h3>
+
+<p>You can use the API on multiple websites and track the performance of each site independently. Indeed offers channel codes to allow you to track the performance of each site individually.</p>
+
+<p>To track site performance using channels, complete the following steps:</p>
+
+<ol>
+  <li>
+    <p>Add a channel code by logging in to your Publisher account and selecting <strong>XML Feed &gt; Add new channel</strong>.</p>
+  </li>
+  <li>
+    <p>Append the channel name to the API request that you add to each website. Use the format: <code class="highlighter-rouge">&amp;chnl=website1</code></p>
+  </li>
+</ol>
+
+<h3 id="pagination">Paginate results on multiple pages</h3>
+
+<p>You can use only one API request for each web page that features Indeed job results. To display results on multiple pages, create a request to paginate results on a new page. Use the <code class="highlighter-rouge">start</code> and <code class="highlighter-rouge">limit</code> parameters to specify the sequence of your results per page.</p>
+
+<p>Example—shows 20 jobs from Indeed per web page:</p>
+
+<pre><code class="language-url">Page 1 API request: &amp;start=0&amp;limit=20
+Page 2 API request: &amp;start=20&amp;limit=20
+Page 3 API request: &amp;start=40&amp;limit=20
+</code></pre>
+<p><strong>Note</strong>: By default, the API displays 10 results, but you can specify a maximum of 25 results per page.</p>
+
+<h3 id="usertip_useragent">Specify userip and useragent</h3>
+
+<p>You must include the <code class="highlighter-rouge">userip</code> and <code class="highlighter-rouge">useragent</code> parameters in API requests.</p>
+
+<p>Example—shows values for <code class="highlighter-rouge">userip</code> and <code class="highlighter-rouge">useragent</code> parameters from the <a href="http://opensource.indeedeng.io/api-documentation/docs/job-search/#search_request">example search request</a>:</p>
+
+<pre><code class="language-url">&amp;userip=1.2.3.4&amp;useragent=Mozilla/%2F4.0%28Firefox%29
+</code></pre>
+
+<h3 id="onmousedown">Include onmousedown attribute</h3>
+
+<p>Each set of API search results includes a unique <code class="highlighter-rouge">&lt;onnousedown&gt;</code> identifier. You must include this identifier in all <code class="highlighter-rouge">&lt;a href&gt;</code> job links you display on your site to ensure clicks are accurately tracked.</p>
+
+<p><em>XML example response</em></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;onmousedown&gt;</span>indeed_clk(this,'0000');<span class="nt">&lt;/onmousedown&gt;</span>
+</code></pre></div></div>
+
+<p><em>JSON example response</em></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s2">"onmousedown"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"indeed_clk(this, '0000');"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p><em>Your link</em></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">onmousedown=</span><span class="s">"indeed_clk(this,'0000');"</span> <span class="na">href=</span><span class="s">"http://www.examplejobboard.com/job?id=15"</span><span class="nt">&gt;</span>
+    Example Job Title
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+
+                    </article>
+                </div>
+                <div class="clear"></div>
+                </div>
+            </section>
+            <footer>
+                
+
+
+    
+            <div>All Indeed APIs are licensed under <a href="https://github.com/indeedeng/imhotep/blob/master/LICENSE">Apache License Version 2.0.</a></div>
+            <div>This site is maintained by <a href="http://github.com/indeedeng">Indeed.com</a> (<a href="http://engineering.indeedblog.com/blog">engineering.indeedblog.com</a>)</div>
+            <div><small>Hosted on GitHub Pages — Theme adapted from <a href="https://github.com/orderedlist/minimal">minimal by orderedlist</a></small></div>
+          </footer>
+        </div>
+        
+
+    
+
+
+            
+            
+        <!--
+        <script src="/api-documentation/assets/js/toc.js"></script>
+        -->
+    
+
+</body></html>
